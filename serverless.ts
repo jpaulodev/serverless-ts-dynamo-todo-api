@@ -37,7 +37,7 @@ const serverlessConfiguration: AWS = {
 
 	functions: { 
 		getAllTodos: {
-			handler: 'src/functions/todo/handlers.getAllTodos',
+			handler: 'src/functions/todo/getAllTodos.handler',
 			events: [{
 				http: {
 					method: 'get',
@@ -46,7 +46,7 @@ const serverlessConfiguration: AWS = {
 			}],
 		},
 		createTodo: {
-			handler: 'src/functions/todo/handlers.createTodo',
+			handler: 'src/functions/todo/createTodo.handler',
 			events: [{
 				http: {
 					method: 'post',
@@ -55,7 +55,7 @@ const serverlessConfiguration: AWS = {
 			}],
 		},
 		getTodo: {
-			handler: 'src/functions/todo/handlers.getTodo',
+			handler: 'src/functions/todo/getTodo.handler',
 			events: [{
 				http: {
 					method: 'get',
@@ -64,7 +64,7 @@ const serverlessConfiguration: AWS = {
 			}],
 		},
 		updateTodo: {
-			handler: 'src/functions/todo/handlers.updateTodo',
+			handler: 'src/functions/todo/updateTodo.handler',
 			events: [{
 				http: {
 					method: 'put',
@@ -73,7 +73,7 @@ const serverlessConfiguration: AWS = {
 			}],
 		},
 		deleteTodo: {
-			handler: 'src/functions/todo/handlers.deleteTodo',
+			handler: 'src/functions/todo/deleteTodo.handler',
 			events: [{
 				http: {
 					method: 'delete',
